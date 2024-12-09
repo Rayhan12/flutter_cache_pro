@@ -23,8 +23,8 @@ class HiveConfig {
   Future<void> init() async {
     await Hive.initFlutter();
 
-    Hive.registerAdapter(HiveMediaStorageDataModel());
-    Hive.registerAdapter(HiveMediaStorageDataModel());
+    // Hive.registerAdapter(HiveMediaStorageDataModel());
+    // Hive.registerAdapter(HiveMediaStorageDataModel());
 
     _dataBoxInstance = await Hive.openBox<HiveAPIResponseModel>(_dataBox);
     _mediaBoxInstance = await Hive.openBox<HiveMediaStorageDataModel>(_mediaBox);
